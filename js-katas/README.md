@@ -1,5 +1,3 @@
-# Programming1-ControlFlow-v2
-
 # JS Katas
 
 ## Purpose

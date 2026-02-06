@@ -1,0 +1,11 @@
+{
+  "name": "js-katas",
+  "version": "1.0.0",
+  "description": "Three small JavaScript katas with tests",
+  "main": "katas/index.js",
+  "scripts": {
+    "test": "node test-runner.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

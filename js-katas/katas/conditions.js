@@ -1,26 +1,31 @@
 // Conditions kata: FizzBuzz-style function that returns an array for 1..n
 
-function fizzBuzz(n = 100) {
-  // TODO: write your solution here (replace the line below).
-  // Return an array of values for 1..n following FizzBuzz rules.
-  // Example: fizzBuzz(5) -> [1, 2, "Fizz", 4, "Buzz"]
-  // Explain your logic choices in comments as you code.
+function fizzbuzz(n = 100) {
+if(n<1){
+  throw new Error('n must be positive')
+}
+ 
   //Purpose: return an array
-    for(let i=1; i <= 20; i++){
+  
+  const result = []
+    for(let i=1; i <= n; i+=1){
       if(i %15 ===0){
-        console.log("fizzbuzz")
+        result.push("fizzbuzz")
       } 
       else if(i % 3 ===0){
-        console.log("fizz");
+        result.push("fizz");
       }else if (i % 5 === 0){
-        console.log("buzz");
+        result.push("buzz");
       } else{
-        console.log(i)
+        result.push(i)
       }
       
     }
 
+    return result;
+
 }
+fizzBuzz(5)
 
 globalThis.__katas = globalThis.__katas || {};
 globalThis.__katas.fizzBuzz = fizzBuzz;

@@ -1,8 +1,8 @@
 // Conditions kata: FizzBuzz-style function that returns an array for 1..n
 
-function fizzbuzz(n = 100) {
+function fizzBuzz(n = 100) {
 if(n<1){
-  throw new Error('n must be positive')
+  throw new Error('n must be positive');
 }
  
   //Purpose: return an array
@@ -10,22 +10,22 @@ if(n<1){
   const result = []
     for(let i=1; i <= n; i+=1){
       if(i %15 ===0){
-        result.push("fizzbuzz")
+        result.push("FizzBuzz");
       } 
       else if(i % 3 ===0){
-        result.push("fizz");
+        result.push("Fizz");
       }else if (i % 5 === 0){
-        result.push("buzz");
+        result.push("Buzz");
       } else{
         result.push(i)
       }
       
     }
 
-    return result;
+    return result
 
 }
-fizzBuzz(5)
+fizzBuzz(5);
 
 globalThis.__katas = globalThis.__katas || {};
 globalThis.__katas.fizzBuzz = fizzBuzz;

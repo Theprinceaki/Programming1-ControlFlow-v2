@@ -1,12 +1,7 @@
-// Conditions kata: FizzBuzz-style function that returns an array for 1..n
-
 function fizzBuzz(n = 100) {
 if(n<1){
   throw new Error('n must be positive');
 }
- 
-  //Purpose: return an array
-  
   const result = []
     for(let i=1; i <= n; i+=1){
       if(i %15 ===0){
